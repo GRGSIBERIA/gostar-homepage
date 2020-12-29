@@ -1,0 +1,42 @@
+$Primary: #f3d2c1;
+$Secondary: #8bd3dd;
+$Tertiary: #f582ae;
+$Stroke: #001858;
+$Highlight: #fef6e4;
+
+$Background: #fef6e4;
+$Headline: #001858;
+$Paragraph: #172c66;
+$Button: #f582ae;
+$ButtonText: #001858;
+
+body {
+    background-color: $Background;
+    color: $Stroke
+}
+
+nav {
+    background-color: $Secondary;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    align-content: center;
+
+    ul {
+        li {
+            display: inline;
+            margin-right: 1rem;
+            background-color: $Tertiary;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+
+            color: $Stroke;
+            font-weight: bolder;
+        }
+    }
+}
