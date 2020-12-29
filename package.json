@@ -1,0 +1,19 @@
+{
+  "name": "gostar-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GRGSIBERIA/gostar-homepage.git"
+  },
+  "author": "Eiichi Takebuchi (GRGSIBERIA)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/GRGSIBERIA/gostar-homepage/issues"
+  },
+  "homepage": "https://github.com/GRGSIBERIA/gostar-homepage#readme"
+}
