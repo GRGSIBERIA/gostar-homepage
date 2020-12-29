@@ -5,24 +5,39 @@ module.exports = {
     // production -- 最適化
     mode: "development",
 
+    devtool: "source-map",
+
     module: {
         rules: [
             {
                 test: /\.css/,
                 use: [
+                    // linkタグに出力するローダ
                     "style-loader",
-                    {
+                    {   // CSSをバンドル
                         loader: "css-loader",
                         options: { 
                             url: false ,
-                            sourceMap: enabledSourceMap,
+                            sourceMap: true,
                             importLoaders: 2
                         }
                     },
-                    {
+                    {   // PostCSS
+                        loader: "postcss-loader",
+                        options: {
+                            sourceMap: true,
+                            postcssOptions: {
+                                plugins: [
+                                    // ベンダープレフィクスを自動付与
+                                    ["autoprefixer", { grid: true }]
+                                ]
+                            }
+                        }
+                    },
+                    {   // Sassをバンドル
                         loader: "sass-loader",
                         options: {
-                            sourceMap: enabledSourceMap
+                            sourceMap: true
                         }
                     }
                 ]

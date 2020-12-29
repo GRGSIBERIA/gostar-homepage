@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/GRGSIBERIA/gostar-homepage#readme",
   "devDependencies": {
+    "autoprefixer": "^10.1.0",
     "css-loader": "^5.0.1",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
