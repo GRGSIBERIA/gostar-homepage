@@ -15,6 +15,16 @@ body {
     color: $Stroke
 }
 
+#talk {
+    align-content: center;
+    text-align: center;
+
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family: "ヒラギノ明朝 Pro", "游明朝", "ＭＳ Ｐ明朝", sans-serif;
+    font-weight: bold;
+}
+
 nav {
     background-color: $Secondary;
     padding-top: 1px;
@@ -46,6 +56,11 @@ nav {
             &:hover {
                 background-color: $Headline;
                 color: $Primary;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
             }
         }
     }
