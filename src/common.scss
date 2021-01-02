@@ -15,7 +15,38 @@ body {
     color: $Stroke
 }
 
-#talk {
+section h1 {
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 1.5rem;
+    font-family: "ヒラギノ明朝 Pro", "游明朝", "ＭＳ Ｐ明朝", sans-serif;
+    font-weight: bolder;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: auto;
+
+    // flexとwidthを併用する場合はmargin-leftとmargin-rightを同時に指定しないと中央寄せされない
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-right: 1rem;
+
+    border: solid;
+    border-radius: 1rem;
+    border-color: $Stroke;
+    border-width: 1px;
+
+}
+
+.talk {
     align-content: center;
     text-align: center;
 
@@ -69,6 +100,7 @@ nav {
             &:hover {
                 background-color: $Headline;
                 color: $Primary;
+
             }
 
             a {
