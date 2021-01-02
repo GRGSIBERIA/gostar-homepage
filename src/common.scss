@@ -1,0 +1,112 @@
+$Primary: #f3d2c1;
+$Secondary: #8bd3dd;
+$Tertiary: #f582ae;
+$Stroke: #001858;
+$Highlight: #fef6e4;
+
+$Background: #fef6e4;
+$Headline: #001858;
+$Paragraph: #172c66;
+$Button: #f582ae;
+$ButtonText: #001858;
+
+body {
+    background-color: $Background;
+    color: $Stroke
+}
+
+section h1 {
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 1.5rem;
+    font-family: "ヒラギノ明朝 Pro", "游明朝", "ＭＳ Ｐ明朝", sans-serif;
+    font-weight: bolder;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: auto;
+
+    // flexとwidthを併用する場合はmargin-leftとmargin-rightを同時に指定しないと中央寄せされない
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-right: 1rem;
+
+    border: solid;
+    border-radius: 1rem;
+    border-color: $Stroke;
+    border-width: 1px;
+
+}
+
+.talk {
+    align-content: center;
+    text-align: center;
+
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-family: "ヒラギノ明朝 Pro", "游明朝", "ＭＳ Ｐ明朝", sans-serif;
+    font-weight: bold;
+}
+
+.trans-transparency {
+    
+    opacity: 0;
+    width: 40%;
+    height: auto;
+
+    transition: 1s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: $Secondary;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    align-content: center;
+
+    ul {
+        li {
+            display: inline;
+            margin-right: 1rem;
+            background-color: $Tertiary;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.3rem;
+
+            color: $Stroke;
+            font-weight: bolder;
+
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0.2s;
+            transition-timing-function: ease-in-out;
+
+            &:hover {
+                background-color: $Headline;
+                color: $Primary;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
